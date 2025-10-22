@@ -1,0 +1,1760 @@
+/*Guevarra, Sophia Rain D.*/
+  /*WD - 201*/
+
+  /* =========================== GENERAL SETTINGS =========================== */
+  body {
+    margin: 0;
+    padding: 0;
+    background: #E2DED8;
+    font-family: 'Abel', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #1E1E1E;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body, p, h1, h2, h3, h4, h5, h6, a, li {
+    color: #1E1E1E;
+  }
+
+  /* =========================== HEADER (GLOBAL) =========================== */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background: #E2DED8;
+    width: 100%;
+    height: 110px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-section img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .logo-text {
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+    font-size: 18px;
+    margin-left: 12px;
+  }
+
+  .right-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  nav a {
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-size: 20px;
+    color: #1E1E1E;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  nav a:hover {
+    color: #AE5D17;
+  }
+
+  /* LOGIN BUTTON */
+  .login-btn {
+    background: #AE5D17;
+    color: #FFEEF2;
+    border-radius: 7px;
+    padding: 8px 24px;
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    min-width: 80px;
+    line-height: normal;
+    transition: transform 0.25s ease, background 0.25s ease;
+  }
+  .login-btn:hover {
+    transform: scale(1.05);
+    background: #924b12;
+  }
+
+  /* =========================== HOME PAGE =========================== */
+  .hero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px;
+    overflow: hidden;
+    z-index: 1;
+    min-height: 650px;
+    background: #6C6964;
+  }
+
+  .hero-content {
+    max-width: 55%;
+    position: relative;
+    z-index: 2;
+  }
+  .hero h1 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 90px;
+    color: #1E1E1E;
+    margin: 0;
+    line-height: 1.1;
+  }
+  .hero h2 {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 800;
+    font-size: 60px;
+    color: #1E1E1E;
+    margin: 25px 0 40px;
+    max-width: 1007px;
+    line-height: 88px;
+    white-space: nowrap;
+  }
+
+  /* HERO IMAGE */
+  /* FIX: Adjust home hero image position */
+  .hero-image {
+  position: relative;
+  right: -120px; /* move image slightly to the right */
+  max-width: 700px;
+  height: auto;
+  z-index: 1;
+}
+
+
+  .hero-invite {
+    font-family: 'Abel', sans-serif;
+    font-size: 98px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #1E1E1E;
+    text-align: center;
+    max-width: 2000px;
+    margin: 50px auto 90px auto;
+    padding: 25px 40px;
+    display: block;
+    position: relative;
+    z-index: 2;
+    background: #FFEEF2;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  /* HERO BUTTONS */
+  .hero-buttons {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 25px;
+    margin-left: 900px;
+    white-space: nowrap;
+  }
+  .hero-buttons a {
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-size: 25px;
+    border-radius: 7px;
+    border: 2px solid #1E1E1E;
+    padding: 10px 25px;
+    text-decoration: underline;
+    color: #1E1E1E;
+    background: #FFEEF2;
+    transition: transform 0.25s ease;
+  }
+  .hero-buttons .adopt {
+    background: #AE5D17;
+    color: #FFEEF2;
+  }
+  .hero-buttons a:hover {
+    transform: scale(1.05);
+  }
+
+  /* WELCOME SECTION */
+  .welcome {
+    padding: 60px 100px;
+    color: #1E1E1E;
+    text-align: left;
+  }
+  .welcome p {
+    font-size: 30px;
+    line-height: 1.8;
+    max-width: 2000px;
+  }
+  .welcome h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    margin-top: 60px;
+    text-align: left;
+  }
+  .welcome ul {
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    list-style-type: disc;
+    padding-left: 50px;
+  }
+
+  /* =========================== CLOSING SECTION =========================== */
+  .closing {
+    text-align: left;         
+    padding: 80px 40px;
+  }
+
+  .closing p {
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    line-height: 1.8;
+    max-width: 1630px;
+    margin: 0 auto;
+    font-weight: 500;
+  }
+
+  /* =========================== PROCESS PAGE =========================== */
+  .process-container {
+    background: #D7D5C9;
+    padding: 100px 100px 80px;
+    text-align: left;
+    color: #1E1E1E;
+    position: relative;
+  }
+
+  .process-container h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 48px;
+    margin-bottom: 60px;
+    text-align: left;
+  }
+
+  /* PROCESS TABLE */
+  .process-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Abel', sans-serif;
+    font-size: 22px;
+    margin-bottom: 60px;
+    border: 2px solid #000;
+    background: #E0E0E0;
+  }
+
+  .process-table th {
+    background: #C8C8C8;
+    font-family: 'Anton', sans-serif;
+    font-size: 26px;
+    padding: 18px;
+    border: 2px solid #000;
+    text-align: left;
+  }
+
+  .process-table td {
+    background: #E0E0E0;
+    padding: 18px;
+    border: 2px solid #000;
+  }
+
+  .process-table tr:hover td {
+    background: #D5D5D5;
+  }
+
+  /* MOBILE LIST (hidden on desktop) */
+  .process-list {
+    display: none;
+    font-family: 'Abel', sans-serif;
+    font-size: 22px;
+    line-height: 1.8;
+    padding-left: 20px;
+  }
+
+  .process-list li {
+    margin-bottom: 12px;
+  }
+
+  /* SUPPORT SECTION */
+  .support-section {
+    font-family: 'Abel', sans-serif;
+    font-size: 24px;
+    background: darkgrey;
+    padding: 25px 40px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .support-details {
+    font-family: 'Abel', sans-serif;
+    font-size: 22px;
+    line-height: 1.8;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .support-details p {
+    margin: 8px 0;
+  }
+
+  /* PAW ICON */
+  .about-icon {
+    position: absolute;
+    bottom: 50px;
+    right: 80px;
+    width: 180px;
+    height: 180px;
+    opacity: 0.9;
+  }
+
+  /* =========================== ABOUT US =========================== */
+  .about {
+    background: #FFEEF2;
+    padding: 60px 80px;
+    font-family: 'Abel', sans-serif;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    margin: 80px 100px;
+  }
+
+  .about h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  .about h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  .about p, .about ul, .about li {
+    font-size: 24px;
+    line-height: 1.9;
+  }
+  .pawheart-logo {
+    position: absolute;
+    width: 199px;
+    height: 199px;
+    bottom: 10px;
+    right: 10px;
+    background-image: url('images/pawheart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* =========================== ADOPT PAGE =========================== */
+  .adopt-hero {
+    background: #D7D5C9;
+    color: #1E1E1E;
+    padding: 100px 80px;
+    text-align: left;
+  }
+
+  .adopt-hero h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+
+  .adopt-hero p {
+    font-family: 'Abel', sans-serif;
+    font-size: 35px;
+    line-height: 1.4;
+    max-width: 2500px;
+    margin: 0; 
+    text-align: left;
+  }
+
+  /* FEATURED PETS */
+  .featured {
+    background: #D7D5C9;
+    padding: 80px 100px;
+    text-align: center;
+  }
+
+  .featured h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+
+  .pets-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+
+  .pet-card {
+    text-align: center;
+    width: 260px;
+    background: #FFEEF2;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .pet-card:hover {
+    transform: scale(1.05);
+  }
+
+  .pet-card img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .pet-name {
+    font-family: 'Anton', sans-serif;
+    font-size: 28px;
+    margin-top: 15px;
+  }
+
+  .pet-desc {
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    margin-top: 5px;
+  }
+
+  /* ADOPTION REQUIREMENTS */
+  .requirements {
+    background: #D7D5C9;
+    padding: 80px 100px;
+    font-family: 'Abel', sans-serif;
+    text-align: left;
+  }
+
+  .requirements h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 55px;
+    margin-bottom: 25px;
+  }
+
+  .requirements ul {
+    list-style-type: disc;
+    padding-left: 50px;
+    font-size: 35px;
+    line-height: 1.9;
+    max-width: 900px;
+  }
+
+  /* PAWHEART LOGO — bottom-right above footer */
+  .pawheart-logo-adopt {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 50px 60px 0 auto;
+    background-image: url('images/pawheart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    display: block;
+  }
+
+  /* ---------- LOGIN PAGE ---------- */
+  body {
+    background-color: #D7D5C9;
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding-top: 120px;
+    position: relative;
+  }
+
+  .login-box {
+    background-color: #BFBDB1;
+    padding: 50px 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 380px;
+    text-align: center;
+  }
+
+  .login-box h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #000;
+  }
+
+  .login-box input[type="email"],
+  .login-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+  }
+
+  .login-box button {
+    background-color: #F38B22;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .login-box button:hover {
+    background-color: #d9791e;
+  }
+
+  .login-box p {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .login-box a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .login-box a:hover {
+    text-decoration: underline;
+  }
+
+  .pawheart-login {
+    position: absolute;
+    bottom: 25px;
+    right: 40px;
+    opacity: 0.9;
+    width: 180px;
+  }
+
+  /* ---------- CONTACT PAGE ---------- */
+  .contact-container {
+    background-color: #D7D5C9;
+    padding: 80px 100px;
+    text-align: left;
+    position: relative;
+    min-height: 80vh;
+  }
+
+  /* CONTACT HEADER */
+  .contact-container h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 42px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  /* CONTACT BOX */
+  .contact-box {
+    background-color: #FFEEF2;
+    padding: 40px 60px;
+    border-radius: 10px;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-box h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .contact-box p {
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+
+  /* MAP */
+  .contact-box iframe {
+    width: 100%;
+    height: 280px;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
+
+  /* CONTACT INFO */
+  .contact-info {
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .contact-info a {
+    color: #1E1E1E;
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+  /* PAW ICON */
+  .about-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 180px;
+    height: 180px;
+    opacity: 0.9;
+  }
+
+  /* PROCESS SECTION */
+  .process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 120px 20px;
+  }
+
+  .process h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .process-steps {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+  }
+
+  .process-card {
+    background: #FFEEF2;
+    border-radius: 16px;
+    width: 320px;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease;
+  }
+
+  .process-card img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .process-card:hover {
+    transform: scale(1.05);
+  }
+
+  .process-card h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .process-card p {
+    font-family: 'Abel', sans-serif;
+    font-size: 22px;
+    line-height: 1.8;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* =========================== FOOTER =========================== */
+  footer {
+    background: grey;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    margin-top: auto;
+  }
+  /* =========================== RESPONSIVE MEDIA QUERIES =========================== */
+
+  /* ---------- Desktop Large Screens (2560x1440 / 1920x1080) ---------- */
+  @media screen and (min-width: 1600px) {
+    header {
+      padding: 20px 140px;
+    }
+
+    .hero {
+      padding: 120px 140px;
+    }
+
+    .hero h1 {
+      font-size: 100px;
+    }
+
+    .hero h2 {
+      font-size: 70px;
+      line-height: 1.2;
+    }
+
+    .hero-image {
+        position: relative;
+    top: -60px;          /* Moves image upward */
+    transform: scale(1.3);  /* Enlarges the image — adjust between 1.2 and 1.4 */
+    transition: all 0.3s ease-in-out;
+    }
+
+    .welcome,
+    .process-container,
+    .featured,
+    .requirements,
+    .adopt-hero,
+    .contact-container {
+      padding: 80px 160px;
+    }
+
+    .process-card {
+      width: 360px;
+      min-height: 400px;
+    }
+
+    .pet-card {
+      width: 300px;
+      height: auto;
+    }
+  }
+
+  /* ---------- Tablet View (1024x1366 and similar) ---------- */
+  @media screen and (max-width: 1200px) and (min-width: 769px) {
+    /* Default: Centered Header for ALL pages except index */
+    header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #6a6767;
+      padding: 20px 0;
+      height: auto;
+    }
+
+    .logo,
+    .site-title,
+    .header-icon {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 35px;
+      flex-wrap: nowrap;
+    }
+
+    nav a {
+      color: #000;
+      background: none;
+      border: none;
+      padding: 5px 0;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #000;
+      color: #000;
+    }
+
+    nav a.active {
+      border-bottom: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 80px 60px;
+    }
+
+    .hero-content {
+      max-width: 100%;
+    }
+
+    .hero h1 {
+      font-size: 70px;
+    }
+
+    .hero h2 {
+      font-size: 45px;
+      line-height: 1.4;
+    }
+
+    .hero-image {
+      width: 500px;
+      margin: 40px auto 0;
+      display: block;
+    }
+
+    .hero-buttons {
+      margin: 40px auto 0;
+      justify-content: center;
+    }
+
+    /* ✅ INDEX PAGE ONLY — Keep desktop layout (left logo + right nav) */
+    body.index-page header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f3ede5;
+      padding: 20px 60px;
+    }
+
+    body.index-page .logo-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      margin-bottom: 0;
+    }
+
+    body.index-page .logo-section img {
+      width: 45px;
+      height: auto;
+    }
+
+    body.index-page .logo-text h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #000;
+      margin: 0;
+    }
+
+    body.index-page nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 25px;
+    }
+
+    body.index-page nav a {
+      color: #000;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    body.index-page nav a:hover {
+      color: #ff7b00;
+    }
+
+    body.index-page nav a.active {
+      border-bottom: none;
+    }
+  }
+  /* ---------- Mobile View (390x844 and smaller) ---------- */
+  @media screen and (max-width: 768px) {
+    /* Prevent horizontal scroll */
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #e5dfd4;
+      padding: 0;
+      height: auto;
+      border-top: 1.5px solid #000;
+      border-bottom: 1.5px solid #000;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .logo-container,
+    .logo-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 15px 0 10px;
+    }
+
+    .logo-container img,
+    .logo-section img {
+      width: 45px;
+      height: auto;
+    }
+
+    /* ---------- NAVIGATION ---------- */
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+    }
+
+    nav a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      color: #000;
+      text-decoration: none;
+      padding: 15px 0;
+      border-top: 1px solid #000;
+      background: transparent;
+      letter-spacing: 0.5px;
+    }
+
+    /* top & bottom lines long and visible */
+    nav a:first-child {
+      border-top: 2px solid #000;
+    }
+
+    nav a:last-child {
+      border-bottom: 2px solid #000;
+    }
+
+    /* transparent when active or pressed */
+    nav a:hover,
+    nav a:active,
+    nav a.active,
+    nav a:focus {
+      background: transparent !important;
+      color: #000 !important;
+      outline: none;
+    }
+
+    /* login nav transparent */
+    nav a .login-btn {
+      background: transparent !important;
+      color: #000 !important;
+      border: none;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 0;
+    }
+
+    /* ---------- MAIN CONTENT ---------- */
+    main,
+    section,
+    article,
+    div {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .main-content,
+    .about-section,
+    .adopt-container,
+    .process-container,
+    .contact-container {
+      width: 100%;
+      padding: 30px 20px 60px;
+      margin: 0 auto;
+    }
+
+    .content-wrapper,
+    .closing-section,
+    .support-section,
+    .support-details {
+      padding: 0;
+      width: 100%;
+    }
+
+    .welcome-text,
+    .about-section p,
+    .adopt-intro,
+    .closing-message {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* ---------- HERO SECTION ---------- */
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+
+    .hero-image {
+      width: 250px;
+      margin: 25px auto 0;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .hero-buttons a {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+
+    /* ---------- ADOPTION STEPS ---------- */
+    .adoption-steps {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 16px;
+      gap: 20px;
+    }
+
+    .step {
+      width: 100%;
+      padding: 18px;
+    }
+
+    .step img {
+      width: 100px;
+      height: 100px;
+    }
+
+    /* ---------- PET CARDS ---------- */
+    .featured {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      padding: 40px 20px;
+    }
+
+    .pet-card {
+      width: 100%;
+      max-width: 360px;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+
+    .pet-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .pet-name {
+      font-size: 20px;
+      margin-top: 10px;
+      font-weight: 700;
+    }
+
+    .pet-desc {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* ---------- REQUIREMENTS ---------- */
+    .requirements {
+      padding: 40px 20px;
+    }
+
+    .requirements h2 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .requirements ul {
+      font-size: 16px;
+      padding-left: 25px;
+      line-height: 1.6;
+    }
+
+    /* ---------- PROCESS PAGE ---------- */
+    .process-container {
+      padding: 40px 20px;
+    }
+
+    .process-table {
+      display: none; /* use paragraph layout only on mobile */
+    }
+
+    .process-list {
+      display: block;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* ---------- CONTACT PAGE ---------- */
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .contact-info {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-info h2 {
+      font-size: 24px;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+    }
+
+    .contact-map iframe {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+    }
+
+    /* ---------- LOGIN PAGE ---------- */
+    .login-container {
+      width: 90%;
+      max-width: 340px;
+      margin: 50px auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    .login-container h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .login-container input {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    .login-container button {
+      width: 100%;
+      font-size: 18px;
+      padding: 10px;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      text-align: center;
+      padding: 18px 10px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    /* ---------- ICON FIX ---------- */
+    .about-icon {
+      position: relative;
+      display: block;
+      margin: 30px auto 0;
+      width: 70px;
+      height: auto;
+    }
+  /* ---------- Center logo and site title for NON-index pages ---------- */
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .logo-container img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logo-container h1,
+  .site-title {
+    text-align: center;
+    margin: 5px 0 0 0;
+  }
+    /* ---------- LEFT ALIGN ALL HEADERS (Adopt Section) ---------- */
+  .adopt-hero h1,
+  .featured p,
+  .requirements h2,
+  .process-container h2 {
+    text-align: left !important;
+    margin-left: 10px !important;
+  }
+}
+/* ====================== EXTRA MOBILE FIXES (390px–768px) ====================== */
+@media screen and (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* ---------- HERO SECTION ---------- */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    word-wrap: break-word;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-top: 10px;
+    white-space: normal;
+  }
+
+  .hero-image {
+    width: 90%;
+    height: auto;
+    margin: 20px auto 0 auto;
+    display: block;
+    position: relative;
+    right: 0;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 20px auto 0;
+    width: 100%;
+  }
+
+  .hero-buttons a {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 80%;
+    max-width: 260px;
+  }
+
+  /* ---------- WELCOME SECTION ---------- */
+  .welcome {
+    padding: 30px 20px;
+  }
+
+  .welcome p, .welcome ul, .welcome li {
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
+  }
+
+  /* ---------- ABOUT SECTION ---------- */
+  .about {
+    margin: 40px 20px 100px;
+    padding: 30px 20px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about h3 {
+    font-size: 24px;
+  }
+
+  .about p, .about ul, .about li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .pawheart-logo {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+    right: auto;
+    position: absolute;
+  }
+
+  /* ---------- ADOPT SECTION ---------- */
+  .adopt-hero {
+    padding: 40px 20px 100px;
+    text-align: center;
+  }
+
+  .adopt-hero h1 {
+    font-size: 28px;
+  }
+
+  .adopt-hero p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .featured {
+    padding: 40px 20px;
+  }
+
+  .featured h2 {
+    font-size: 26px;
+  }
+
+  .pets-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pet-card {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .pet-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .pet-name {
+    font-size: 20px;
+  }
+
+  .pet-desc {
+    font-size: 16px;
+  }
+
+  .requirements {
+    padding: 40px 20px 100px;
+  }
+
+  .requirements h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .requirements ul {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: 25px;
+  }
+
+  .pawheart-logo-adopt {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+    right: auto;
+    position: absolute;
+  }
+
+  /* ---------- PROCESS SECTION ---------- */
+  .process-container {
+    padding: 40px 20px 100px;
+  }
+
+  .process-container h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .process-card {
+    width: 100%;
+    max-width: 320px;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .process-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .process-card h3 {
+    font-size: 22px;
+  }
+
+  .process-card p {
+    font-size: 16px;
+  }
+
+  /* ---------- LOGIN PAGE ---------- */
+  .login-container {
+    width: 90%;
+    padding: 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .login-box {
+    width: 100%;
+    padding: 30px 20px 100px;
+  }
+
+  .login-box h2 {
+    font-size: 22px;
+  }
+
+  .login-box input[type="email"],
+  .login-box input[type="password"] {
+    font-size: 14px;
+  }
+
+  .login-box button {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .pawheart-login {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+    right: auto;
+    position: absolute;
+  }
+
+  /* ---------- CONTACT PAGE ---------- */
+  .contact-container {
+    padding: 40px 20px 100px;
+    text-align: center;
+  }
+
+  .contact-container h2 {
+    font-size: 28px;
+  }
+
+  .contact-box {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .contact-box h3 {
+    font-size: 22px;
+  }
+
+  .contact-box p {
+    font-size: 16px;
+  }
+
+  .contact-box iframe {
+    height: 200px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    font-size: 14px;
+    padding: 15px 10px;
+  }
+}
+/* ================= MOBILE NAV FULL-WIDTH LINES ================= */
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  nav a {
+    width: 100vw;
+    margin: 0;
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  nav a:first-child {
+    border-top: 2px solid #000;
+  }
+
+  nav a:last-child {
+    border-bottom: 2px solid #000;
+  }
+}
+/* ==========================================================
+   🐾 FINAL FIX 9.0 — Individual Pawheart Positioning (Mobile)
+   Each page tuned separately for perfect alignment
+   ========================================================== */
+@media screen and (max-width: 768px) {
+
+  /* ========= ADOPT PAGE ========= */
+  .requirements {
+    position: relative;
+    padding-bottom: 210px; /* slightly less space */
+  }
+
+  .pawheart-logo-adopt {
+    position: absolute;
+    bottom: -0px; /* 🔼 raised higher than others */
+    right: 25px;
+    width: 100px;
+    height: 100px;
+    background-image: url('images/pawheart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* ========= ABOUT PAGE ========= */
+  .about-container {
+    position: relative;
+    padding-bottom: 250px; /* more space to accommodate lower logo */
+  }
+
+  .pawheart-logo-about {
+    position: absolute;
+    bottom: -100px; /* 🔽 lowered to match visual alignment */
+    right: 120px;
+    width: 100px;
+    height: 100px;
+    background-image: url('images/pawheart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* ========= CONTACT PAGE ========= */
+  .contact-container {
+    position: relative;
+    padding-bottom: 220px;
+  }
+
+  .pawheart-logo-contact {
+    position: absolute;
+    bottom: -40px; /* standard height */
+    right: 25px;
+    width: 100px;
+    height: 100px;
+    background-image: url('images/pawheart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* ========= PROCESS PAGE ========= */
+  .process-container {
+    position: relative;
+    padding-bottom: 220px;
+  }
+
+  .pawheart-logo-process {
+    position: absolute;
+    bottom: -40px; /* standard height */
+    right: 25px;
+    width: 100px;
+    height: 100px;
+    background-image: url('images/pawheart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* ========= LOGIN PAGE ========= */
+  .login-container {
+    position: relative;
+    padding-bottom: 220px;
+  }
+
+  .pawheart-logo-login {
+    position: absolute;
+    bottom: -40px; /* standard height */
+    right: 25px;
+    width: 100px;
+    height: 100px;
+    background-image: url('images/pawheart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+/* ✅ Desktop View (woman & dog higher + larger) */
+@media screen and (min-width: 1025px) {
+  .hero img {
+    position: relative;
+    top: -100px;              /* ⬆️ move higher */
+    transform: scale(1.65);   /* 🖼️ enlarge more */
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/* ✅ Tablet View (centered + moved slightly down) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero img {
+    position: relative;
+    top: 40px;                /* ⬇️ move down a bit */
+    transform: scale(1.25);   /* moderate size */
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* ✅ Mobile View (centered perfectly + a little lower) */
+@media screen and (max-width: 768px) {
+  .hero img {
+    position: relative;
+    top: 60px;                /* ⬇️ move further down */
+    transform: scale(1.1);    /* slightly larger for visibility */
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+  }
+}
+/* ====================== ABOUT US: Paw Heart (Desktop & Tablet) ====================== */
+@media screen and (min-width: 769px) {
+  .about-section {
+    position: relative;        /* ensure pawheart positions inside section */
+    padding-bottom: 140px;     /* space for pawheart above footer */
+  }
+
+  .pawheart-logo-about {
+    position: absolute;        /* inside About Us section only */
+    bottom: 60px;              /* slightly above footer */
+    right: 40px;               /* near right edge */
+    width: 120px;
+    height: 120px;
+    background-image: url('images/pawheart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    z-index: 5;
+  }
+}
+/* ====================== PRINT STYLES: FOR WHOLE HTML ====================== */
+@media print {
+  /* Ensure colors and background images are printed */
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Hide unnecessary navigation and buttons */
+  header,
+  nav,
+  .login-btn {
+    display: none !important;
+  }
+
+  /* Main content formatting */
+  main, .about-section {
+    position: relative;
+    padding: 40px;
+    margin: 0;
+    color: #000000 !important;
+    background: none !important;
+  }
+
+  /* Adjust paw heart for print */
+  .pawheart-logo {
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    width: 90px;
+    height: 90px;
+    background-image: url('images/pawheart.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    opacity: 1 !important;
+  }
+
+  /* Simplify text styles for clarity in print */
+  h1, h2, h3, h4, h5, h6 {
+    color: #000000 !important;
+  }
+
+  p, li, ul {
+    color: #000000 !important;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Footer should appear neatly at the bottom of the printed page */
+  footer {
+    position: relative;
+    background: none !important;
+    color: #000000 !important;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 0;
+    font-size: 12px;
+    border-top: 1px solid #000000;
+  }
+
+  /* Avoid page breaks inside important sections */
+  h2, p, ul, footer {
+    page-break-inside: avoid;
+  }
+
+  /* Remove scrollbars, fit content to page width */
+  html, body {
+    overflow: visible !important;
+    height: auto !important;
+  }
+}
